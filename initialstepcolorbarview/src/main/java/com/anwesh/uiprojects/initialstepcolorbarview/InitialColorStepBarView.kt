@@ -43,7 +43,7 @@ fun Canvas.drawICSBNode(i : Int, scale : Float, paint : Paint) {
     paint.color = Color.parseColor(colors[i])
     save()
     for (j in 0..(bars - 1)) {
-        drawColorStepBar(i, scale, w, h, paint)
+        drawColorStepBar(j, scale, w, h, paint)
     }
     restore()
 }
